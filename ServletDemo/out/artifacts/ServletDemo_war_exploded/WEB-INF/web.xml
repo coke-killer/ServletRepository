@@ -52,5 +52,20 @@
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
-
+    <servlet>
+        <servlet-name>forwardServlet</servlet-name>
+        <servlet-class>servlet.ForwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forwardServlet</servlet-name>
+        <url-pattern>/forwardServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>redirectServlet</servlet-name>
+        <servlet-class>servlet.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirectServlet</servlet-name>
+        <url-pattern>/redirectServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

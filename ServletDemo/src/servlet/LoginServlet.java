@@ -13,6 +13,11 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("utf-8");
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
@@ -31,10 +36,5 @@ public class LoginServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req, resp);
     }
 }
